@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 🚀 Jornada de Revisão JavaScript: Variáveis a Arrays (Pós-Férias) 🎮
 Bem-vindo(a), aventureiro(a)!
 
