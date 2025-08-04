@@ -30,12 +30,7 @@ Funções: Aprendendo a criar e usar essas "magias" reutilizáveis, entendendo p
 💎 Etapa 3: O Tesouro dos Arrays
 A fase final nos levará ao tesouro mais dinâmico: os Arrays.
 
-🤝 Guilda de Ajuda e Feedback
-Se encontrar algum "monstro" (bug), tiver uma "poção de sabedoria" (sugestão) ou quiser discutir algum tópico, meu "comunicador mágico" (contato) está aberto!
-Que a jornada comece! Avante, programador(a)!
-=======
 Contato e Feedback
 Se você tiver alguma sugestão, correção ou quiser discutir qualquer um dos tópicos de JavaScript (variáveis até arrays), sinta-se à vontade para entrar em contato.
 
 Vamos nessa!
->>>>>>> c8df4b2197bab7df607e621a74440c2f2fc6a8f1
