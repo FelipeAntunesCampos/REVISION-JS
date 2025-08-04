@@ -1,0 +1,152 @@
+//Criação das Variáveis Principais:
+let nome = "Trendius"; // Nome do personagem;
+let classe = "guerreiro"; // Tipo de herói (guerreiro, maga, engenheira arcana, etc.);
+let nivel = 12; // Nível do herói (número entre 1 e 20, por exemplo);
+let vida = 100; // Pontos de vida;
+let ouro = 50; // Quantidade de moedas;
+let xp = 15; // Experiência acumulada;
+let agilidade = 25; //Agilidade do personagem (de 1 a 100 podendo ultrapassar, tornando agilidade adicional);
+let vidaMaxima = 100; //Vida maxima que o personagem pode chegar;
+let poderInimigo = 30; //Valor do poder inimigo ao personagem principal;
+let mana = 30; //Mana de 1 a 100;
+let combatesVencidos = 0; //Combates vencidos contra inimigos;
+let localHistoria = "Salvador"; //Local da historia
+
+//Definição de Constantes Mágicas:
+let NOME_ARMA = "Espada temperada"; // Ex: "Espada Flamejante";
+let DANO_BASE = 70; // Ex: 40;
+let NOME_ARMADURA = "Armadura de Placas"; // Ex: "Capa de Dados";
+let DEFESA_BASE = 30; // Ex: 20;
+
+//Aplicação de Operadores de Atribuição:
+let valorRecebidoDeXpPorTreinamento = 150; //Valor Recebido de xp por cada treinamento;
+let pocaoValorOuros = 30; //Preço da poção;
+let pocaoValorVida = 40; //Quanto a poção acrescenta de vida;
+let encantarArma = 2; //encantamento da espada
+
+xp += valorRecebidoDeXpPorTreinamento; // Valor Do treinamento adicionado ao xp do personagem;
+ouro -= pocaoValorOuros; // Valor de ouro removido para comprar a poção;
+vida += pocaoValorVida; // Acrescenta valor de vida após utilizar a poção;
+DANO_BASE *= encantarArma; // Dobra o valor de dano da espada, após encantamento;
+
+//Cálculo de Atributos Finais:
+ataqueTotal = nivel + DANO_BASE; //Criação do dano total com base no nivel + Dano base;
+defesaTotal = DEFESA_BASE + (nivel / 2); //Criação da Defesa total com base na defesa base + nivel divido por 2;
+
+//Avaliação de Prontidão com Operadores Lógicos:
+vidaSuficiente = vida > 70; // Verificar se a vida é suficiente se for maior que 70;
+ataqueForte = ataqueTotal > 60; // Verificar se o ataque é forte se o ataque total for mais que 60;
+nivelAvancado = nivel >= 10; //Verificar se o nivel é avancado se o nivel for >= 10
+podeEnfrentarGuardiao = vidaSuficiente && (ataqueForte || nivelAvancado); //Verificar se pode enfrentar o guardião, se a vida for suficiente e (O ataque for forte ou o nivel avancado);
+
+//Geração da Lore do Personagem:
+console.log("---");
+console.log("📜 História DO HERÓI: " + nome);
+console.log("");
+console.log(nome + ", o " + classe + " destemido, forjou seu caminho através das terras perigosas de" + localHistoria + ".");
+console.log("Com uma reputação construída em batalha, ele é um herói de nível " + nivel + ", temido por seus inimigos e respeitado por seus aliados.");
+console.log("");
+console.log("Seu equipamento é tão lendário quanto suas proezas. Empunhando uma " + NOME_ARMA + ", agora atribuida com um encantamento mítico que dobrou seu dano para " + DANO_BASE + ", " + nome + " aplica golpes que gritam pelos vales.");
+console.log("Sua " + NOME_ARMADURA + ", com uma defesa base de " + DEFESA_BASE + ", combinada com sua agilidade e experiência, concede-lhe uma defesa total de " + defesaTotal + ".");
+console.log("");
+console.log("A vida de um aventureiro é pesada, e " + nome + " sabe disso. Após incansáveis treinamentos, sua experiência acumulada (XP) subiu para " + xp + ", aproximando-o de novos patamares de poder.");
+console.log("Recentemente, ele garantiu sua sobrevivência comprando uma poção vital, gastando " + pocaoValorOuros + " moedas de ouro e restaurando sua vida para " + vida + " pontos.");
+console.log("");
+console.log("Com a mente voltada para os desafios que se aproximam, " + nome + " avalia sua prontidão.");
+console.log("Sua vida está mais do que suficiente? " + vidaSuficiente + " | Seu ataque é forte? " + ataqueForte + " | Seu nível é avançado? " + nivelAvancado + ".");
+console.log("Tudo indica que ele pode enfrentar o Guardião? " + podeEnfrentarGuardiao + ". O destino de Salvador espera sobre suas mãos pesadas e habilidades inevitáveis, e " + nome + " está pronto para a batalha final.");
+console.log("---");
+console.log("📜 === CONTINUAÇÃO DA JORNADA DE " + nome + " ===");
+console.log("");
+
+// PRÓLOGO - Conexão com o Nível 1
+console.log("Após os eventos em " + localHistoria + ", nosso herói " + nome);
+console.log("da classe " + classe + " se depara com um novo desafio...");
+console.log("");
+
+// [Aqui você implementa os 3 capítulos com os conceitos das etapas anteriores]
+// [Aqui você implementa o 1 capítulo]
+// CAPÍTULO 1: Condicionais Simples na narrativa
+console.log("🌅 CAPÍTULO 1: O Aviso dos Anciões");
+
+// Verificação baseada no nível do personagem
+if (nivel < 10) {
+    console.log("⚠️ Um ancião o adverte: 'Você ainda não alcançou a habilidade necessaria para prosseguir!'");
+    console.log("Mas " + nome + " decide prosseguir mesmo assim...");
+}
+
+// Verificação de recursos especiais
+if (ouro >= 70) {
+    console.log("💰 Os Ouros brilham em seus bolsos, atraindo olhares cobiçosos...");
+}
+
+// Verificação de classe específica
+if (classe === "guerreiro") {
+    console.log("✨ A energia das suas espadas flui através de suas veias e de seus grandiosos braços..."); 
+}
+
+// [Aqui você implementa o 2 capítulo]
+
+// CAPÍTULO 2: Escolha Estratégica
+console.log("🛡️ CAPÍTULO 2: A Encruzilhada do Destino");
+
+// Escolha baseada em recursos
+if (ouro >= 50) {
+    console.log("💰 Com ouro suficiente, " + nome + " compra equipamentos melhores para prosseguir sua jornada!");
+    ataqueTotal += 5;
+    defesaTotal += 3;
+    ouro -= 50;
+    console.log("A Força Total e a defesa Total aumentaram! Ouro restante: " + ouro);
+} else {
+    console.log("💔 Sem ouro suficiente, " + nome + " deve confiar apenas em suas habilidades!");
+    console.log("A adversidade fortalece o espírito! O sua agilidade aumenta em +2");
+    agilidade += 2;
+}
+
+// Sistema de recompensas narrativo
+if (xp >= 100) {
+    console.log("🎉 A sabedoria acumulada se manifesta! " + nome + " sente-se mais poderoso e mais grandioso!");
+    nivel++;
+    xp = 0;
+    vida = vidaMaxima; // Vida restaurada
+} else {
+    console.log("📊 " + nome + " ainda busca mais conhecimento e experiência...");
+    console.log("Sabedoria atual: " + xp + "/100");
+}
+
+// [Aqui você implementa o 3 capítulo]
+
+// CAPÍTULO 3: A Batalha Decisiva
+console.log("⚔️ CAPÍTULO 3: A Batalha Decisiva");
+
+// Sistema de combate inteligente baseado na situação
+if (vida <= 30) {
+    console.log("🆘 Com pouca vida, " + nome + " usa uma tática desesperada!");
+    console.log("Ataque final com toda a força restante!");
+    poderInimigo -= (ataqueTotal * 2);
+} else if (mana >= 15 && classe === "Guerreiro") {
+    console.log("✨ " + nomePersonagem + " canaliza todo sua habilidade com a força de suas espadas!");
+    console.log("Uso excessivo de força!");
+    poderInimigo -= (ataqueTotal + 20);
+    mana -= 15;
+} else if (agilidade >= 15) {
+    console.log("🏃‍♂️ Com grande agilidade, executa um ataque certeiro!");
+    poderInimigo -= ataqueForte;
+} else {
+    console.log("🛡️ Luta defensiva e calculada!");
+    poderInimigo -= (ataqueTotal / 2);
+    vida += 10; // Recupera um pouco de vida
+}
+
+// EPÍLOGO - Resultado final
+if (poderInimigo <= 0) {
+    console.log("🎉 VITÓRIA ÉPICA! " + nome + " triunfa!");
+    xp += 100;
+    combatesVencidos++;
+    console.log("A lenda de " + localHistoria + " cresce...");
+} else {
+    console.log("⚔️ A batalha foi árdua, mas " + nome + " sobrevive para lutar outro dia!");
+}
+
+console.log("");
+console.log("🏁 FIM DO CAPÍTULO - Aguarde o próximo nível da aventura!");

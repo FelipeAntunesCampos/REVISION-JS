@@ -1,16 +1,16 @@
 //Criação das Variáveis Principais:
 let nome = "Trendius"; // Nome do personagem;
 let classe = "guerreiro"; // Tipo de herói (guerreiro, maga, engenheira arcana, etc.);
-let nivel = "12"; // Nível do herói (número entre 1 e 20, por exemplo);
-let vida = "100"; // Pontos de vida;
-let ouro = "50"; // Quantidade de moedas;
-let xp = "15" // Experiência acumulada;
+let nivel = 12; // Nível do herói (número entre 1 e 20, por exemplo);
+let vida = 100; // Pontos de vida;
+let ouro = 50; // Quantidade de moedas;
+let xp = 15 // Experiência acumulada;
 
 //Definição de Constantes Mágicas:
 let NOME_ARMA = "Espada temperada"; // Ex: "Espada Flamejante";
 let DANO_BASE = 70; // Ex: 40;
 let NOME_ARMADURA = "Armadura de Placas"; // Ex: "Capa de Dados";
-let DEFESA_BASE = "30"; // Ex: 20;
+let DEFESA_BASE = 30; // Ex: 20;
 
 //Aplicação de Operadores de Atribuição:
 let valorRecebidoDeXpPorTreinamento = 150; //Valor Recebido de xp por cada treinamento;
