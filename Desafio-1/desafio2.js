@@ -43,7 +43,7 @@ podeEnfrentarGuardiao = vidaSuficiente && (ataqueForte || nivelAvancado); //Veri
 console.log("---");
 console.log("📜 História DO HERÓI: " + nome);
 console.log("");
-console.log(nome + ", o " + classe + " destemido, forjou seu caminho através das terras perigosas de" + localHistoria + ".");
+console.log(nome + ", o " + classe + " destemido, forjou seu caminho através das terras perigosas de " + localHistoria + ".");
 console.log("Com uma reputação construída em batalha, ele é um herói de nível " + nivel + ", temido por seus inimigos e respeitado por seus aliados.");
 console.log("");
 console.log("Seu equipamento é tão lendário quanto suas proezas. Empunhando uma " + NOME_ARMA + ", agora atribuida com um encantamento mítico que dobrou seu dano para " + DANO_BASE + ", " + nome + " aplica golpes que gritam pelos vales.");
@@ -146,7 +146,8 @@ if (poderInimigo <= 0) {
     console.log("A lenda de " + localHistoria + " cresce...");
 } else {
     console.log("⚔️ A batalha foi árdua, mas " + nome + " sobrevive para lutar outro dia!");
+    combatesVencidos++;
 }
 
 console.log("");
-console.log("🏁 FIM DO CAPÍTULO - Aguarde o próximo nível da aventura!");
+console.log(`🏁 FIM DO CAPÍTULO - ${nome} agora tem ${combatesVencidos} combates vencidos, Aguarde o próximo nível da aventura!`);
