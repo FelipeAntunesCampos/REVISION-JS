@@ -245,3 +245,49 @@ defesaTotal += 30;
 
 console.log("🎖️ Equipe completa e fortalecida! Ouro Total: " + ouro + " | Vida máxima: " + vida + " | Ataque Total: " + ataqueTotal + " | Defesa Total: " + defesaTotal);
 
+// === CAPÍTULO 4: A BATALHA FINAL DOS ARRAYS ===
+console.log("");
+console.log("🐉 CAPÍTULO 4: Confronto com as Criaturas Místicas do Castelo");
+
+// Sistema de batalha usando arrays e for tradicional
+let inimigosBatalha = ["Guardião do Poderoso templo de indiona", "Senhor dos ovos de gionte", "Dragão dos Arrays de conversão"];
+let danoRecebido = [];
+
+console.log("💀 " + nome + " enfrenta " + inimigosBatalha.length + " inimigos Místicos e épicos!");
+
+// Batalha usando for tradicional para controle preciso
+for (let i = 0; i < inimigosBatalha.length; i++) {
+let inimigo = inimigosBatalha[i];
+let dano = Math.floor(Math.random() * 30) + 10; // Dano entre 10 e 39
+
+console.log("⚔️ Rodada " + (i + 1) + " - Enfrentando: " + inimigo);
+console.log("💥 " + inimigosBatalha[i] + " causa " + dano + " de dano!");
+danoRecebido.push(dano); // Armazena dano para cálculos posteriores
+console.log("Nosso Guerreiro " + nome + " causa " + ataqueTotal + " De dano total nos inimigos e.....");
+
+// Lógica especial para cada rodada baseada no índice
+if (i === 0) {
+console.log("💎 Primeira vitória! Cristais fragmentados do Poderoso Templo De Indiona Concedem Bônus!");
+tesouroColetado.push("Fragmento de Cristal");
+} else if (i === 1) {
+console.log("🌑 Segunda batalha! Os ovos assombrosos contaminam com sua místicidade a energia do guerreiro, mas " + nome + " resiste!");
+vida -= 15;
+} else {
+console.log("🔥 Batalha final! O dragão recua! Vitória épica alcançada!");
+xp += 100;
+tesouroColetado.push("Escama Dragônica");
+}
+}
+
+// Calculando estatísticas da batalha usando for tradicional
+let danoTotal = 0;
+for (let i = 0; i < danoRecebido.length; i++) {
+danoTotal += danoRecebido[i];
+console.log("📊 Rodada " + (i + 1) + " - Dano: " + danoRecebido[i]);
+}
+console.log("🧨 Dano total recebido:" + danoTotal);
+
+console.log("⚡ Dano total causado: " + ataqueTotal);
+console.log("🏆 Tesouros coletados: " + tesouroColetado.length + " itens épicos!");
+
+
