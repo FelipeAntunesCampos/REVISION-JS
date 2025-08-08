@@ -6,7 +6,7 @@ let vida = 100; // Pontos de vida;
 let ouro = 50; // Quantidade de moedas;
 let xp = 15; // Experiência acumulada;
 let agilidade = 25; //Agilidade do personagem (de 1 a 100 podendo ultrapassar, tornando agilidade adicional);
-let vidaMaxima = 100; //Vida maxima que o personagem pode chegar;
+let vidaMaxima = 150; //Vida maxima que o personagem pode chegar;
 let poderInimigo = 30; //Valor do poder inimigo ao personagem principal;
 let mana = 30; //Mana de 1 a 100;
 let combatesVencidos = 0; //Combates vencidos contra inimigos;
@@ -271,7 +271,7 @@ console.log("💎 Primeira vitória! Cristais fragmentados do Poderoso Templo De
 tesouroColetado.push("Fragmento de Cristal");
 } else if (i === 1) {
 console.log("🌑 Segunda batalha! Os ovos assombrosos contaminam com sua místicidade a energia do guerreiro, mas " + nome + " resiste!");
-vida -= 15;
+vida -= 35;
 } else {
 console.log("🔥 Batalha final! O dragão recua! Vitória épica alcançada!");
 xp += 100;
@@ -290,4 +290,34 @@ console.log("🧨 Dano total recebido:" + danoTotal);
 console.log("⚡ Dano total causado: " + ataqueTotal);
 console.log("🏆 Tesouros coletados: " + tesouroColetado.length + " itens épicos!");
 
+// === EPÍLOGO: O MESTRE DOS ARRAYS ===
+console.log("");
+console.log("👑 === EPÍLOGO: " + nome + " - CONQUISTADOR DO CASTELO DAS 'Masmorras Sistemáticas de odin' ===");
 
+// Estatísticas finais da jornada
+console.log("📈 Estatísticas Finais da Aventura:");
+console.log("• Nível alcançado: " + nivel);
+console.log("• Experiência total: " + xp);
+console.log("• Vida restante: " + vida + "/" + vidaMaxima);
+console.log("• Ouro acumulado: " + ouro);
+console.log("• Itens no inventário: " + inventario.length);
+console.log("• Aliados conquistados: " + aliados.length);
+console.log("• Tesouros épicos: " + tesouroColetado.length);
+
+// === ADICIONE SUAS 10+ LINHAS ÉPICAS DE CONTINUAÇÃO AQUI ===
+console.log("");
+console.log("🌟 A JORNADA CONTINUA...");
+console.log("Depois de dominar o Castelo dos Códigos, " + nome + " se tornou mais forte.");
+console.log("Ele agora entende como os dados funcionam, como se fossem magia em suas mãos.");
+console.log("Cada código que ele fez deixou sua mente mais afiada e com mais vontade de vencer.");
+console.log("Os dados agora revelam segredos e mostram como as coisas se conectam.");
+console.log("Seus amigos admiram como ele consegue organizar tudo o que parece bagunça.");
+console.log("O inventário dele está cheio de itens poderosos que ele acabou de descobrir.");
+console.log("Mas a aventura não para. Mais desafios esperam por esse Mestre da Programação.");
+console.log("Dizem que há novas tarefas e funções para aprender, em torres bem altas.");
+console.log("E que existem ferramentas secretas que guardam os segredos de como criar programas melhores.");
+console.log("O caminho está só começando. É o início de uma grande história.");
+console.log("Pois " + nome + " provou que merece o título de:");
+console.log("⚡ GRANDE MESTRE DOS CÓDIGOS ⚡");
+console.log("");
+console.log("🎯 FIM DO NÍVEL 3 | AGUARDE FUTURAS AVENTURAS NA ACADEMIA DOS CÓDIGOS! 🎯");
