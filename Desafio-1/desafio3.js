@@ -216,3 +216,32 @@ vida -= 10; // Pequeno dano temporal
 
 console.log("📊 Exploração das salas medievais completa! XP Total: " + xp + " | Vida Total: " + vida); 
 
+// === CAPÍTULO 3: A UNIÃO DOS ALIADOS ===
+console.log("");
+console.log("🤝 CAPÍTULO 3: Reunindo os Aliados Arcanos para uma nova trajetória mística");
+
+// Recrutando aliados com for (Laço de repetição) tradicional
+console.log("🏹 " + nome + " convoca seus aliados Aracanos para a batalha final mais esperada:");
+for (let i = 0; i < aliados.length; i++) {
+let aliado = aliados[i];
+console.log("⚡ Aliado " + (i + 1) + ": " + aliado + " se junta à missão!");
+
+// Cada posição no array determina habilidade especial
+if (i === 0) { // Primeiro aliado - Líder mágico 
+console.log("🔮 Como líder mágico Supremo, " + aliado + " multiplica o poder da equipe!");
+ouro += 50;
+ataqueTotal = ataqueTotal * 2
+} else if (i === 1) { // Segundo aliado - Defensor
+console.log("🛡️ Como defensor principal Supremo, " + aliado + " fortalece a resistência!");
+vida += 30;
+defesaTotal += 40;
+} else { // Demais aliados - Especialistas
+console.log("🏹 Como especialista Supremo, " + aliado + " aprimora táticas de combate!");
+xp += 40;
+ataqueTotal += 30;
+defesaTotal += 30;
+}
+} //Fim do loop de repetição FOR
+
+console.log("🎖️ Equipe completa e fortalecida! Ouro Total: " + ouro + " | Vida máxima: " + vida + " | Ataque Total: " + ataqueTotal + " | Defesa Total: " + defesaTotal);
+
