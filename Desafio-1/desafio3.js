@@ -321,3 +321,20 @@ console.log("Pois " + nome + " provou que merece o título de:");
 console.log("⚡ GRANDE MESTRE DOS CÓDIGOS ⚡");
 console.log("");
 console.log("🎯 FIM DO NÍVEL 3 | AGUARDE FUTURAS AVENTURAS NA ACADEMIA DOS CÓDIGOS! 🎯");
+
+// EXEMPLO DE DESAFIO EXTRA: Sistema de Raridade]
+let itensRaros = [];
+let itensComuns = [];
+                        
+// Classificando itens por raridade usando loops clássicos
+for (let i = 0; i < inventario.length; i++) {
+        let item = inventario[i];
+if (item.includes("Espada temperada") || item.includes("Armadura de Placas")) {
+        itensRaros.push(item);
+    } else {
+        itensComuns.push(item);
+    }
+}
+                        
+console.log("💎 Itens Raros: " + itensRaros);
+console.log("🔧 Itens Comuns: " + itensComuns);
